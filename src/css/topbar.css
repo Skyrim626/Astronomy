@@ -1,0 +1,56 @@
+
+/************ Custom Font ************/
+@font-face {
+    font-family: Poppins;
+    src: url('../assets/fonts/poppins/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url('../assets/fonts/orbitron/Orbitron-Medium.ttf');
+    font-weight: 500;
+}
+
+nav {
+    
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 2.2rem;
+    z-index: 10000;
+}
+
+nav .title-container {
+    text-decoration: none;
+    margin-left: 2rem;
+    color: #fff;
+    transition: 0.25s;
+}
+
+nav .title-container:hover {
+    color: #5bc0de;
+}
+
+
+nav .title-container .title-text {
+    font-family: 'Poppins';
+    font-size: 36px;
+    
+}
+
+.navigation-links li {
+    list-style-type: none;
+    margin-right: 2.5rem;
+}
+
+.navigation-links li a {
+    text-decoration: none;
+    font-family: 'Orbitron';
+    color: #fff;
+    transition: 0.25s;
+}
+
+.navigation-links li a:hover {
+    color: #5bc0de;
+}
