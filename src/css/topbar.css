@@ -12,45 +12,124 @@
     font-weight: 500;
 }
 
-nav {
-    
+header {
+    padding: 20px 10px 10px 20px;
     position: absolute;
-    width: 100%;
-    top: 0;
-    padding: 2.2rem;
+    top: 0; 
+    right: 0; 
+    left: 0;
     z-index: 10000;
 }
 
-nav .title-container {
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/********************* Logo/Title Text Style *****************/
+.navbar-container .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
     text-decoration: none;
-    margin-left: 2rem;
-    color: #fff;
-    transition: 0.25s;
 }
 
-nav .title-container:hover {
-    color: #5bc0de;
+.navbar-container .logo-container h1 {
+    margin: 0;
+    color: white;
+    font-family: "Poppins";
+    transition: 0.5s;
+}
+
+.navbar-container .logo-container h1:hover {
+    color: #d6d6d6;
 }
 
 
-nav .title-container .title-text {
-    font-family: 'Poppins';
-    font-size: 36px;
+/********************* Navigation Links Style *****************/
+.navbar-container .link-container {
+    display: flex;
+    margin: 0;
+}
+
+.navbar-container .link-container li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.navbar-container .link-container li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Orbitron';
+    transition: 0.5s;
+}
+
+.navbar-container .link-container li a:hover {
+    color: #d6d6d6;
+}
+
+/********************** Menu Icon *****************/
+header .navbar-container .menu-icon {
+ display: none;
+ cursor: pointer;
+ flex-direction: column;
+ gap: 5px;
+}
+
+header .navbar-container .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/********************* Media query for menu icon and responsive design *********************/
+@media (max-width: 1258px) {
+
+
+    header .navbar-container {
+        justify-content: space-between;
+    }
+
+header .navbar-container .menu-icon {
+    display: flex;
+    padding: 5px;
     
 }
 
-.navigation-links li {
-    list-style-type: none;
-    margin-right: 2.5rem;
+header .navbar-container .link-container {
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 0;
 }
 
-.navigation-links li a {
-    text-decoration: none;
-    font-family: 'Orbitron';
-    color: #fff;
-    transition: 0.25s;
+header .navbar-container .link-container li {
+    width: 100%;
+    margin: 5px 0;
 }
 
-.navigation-links li a:hover {
-    color: #5bc0de;
+/************ During Menu Icon Clicked **************/
+
+header .active:before {
+content: '';
+    position: absolute;
+    background-color: #121212;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
 }
+
+header .navbar-container .active {
+    display: block !important;
+}
+
+} 

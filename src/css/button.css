@@ -6,7 +6,7 @@
     font-weight: 500;
 }
 
-.button {
+/* .button {
     background: none;
     border: 3px solid #000;
     font-family: "Poppins";
@@ -17,15 +17,10 @@ text-transform: uppercase;
     cursor: pointer;
     transition: color 0.4s linear;
     position: relative;
-    color: #fff;
     z-index: 10000;
     letter-spacing: 5px;
+    
 }
-
-/* .button:hover {
-    color: ;
-}
- */
 
  .button::before {
     content: "";
@@ -36,14 +31,18 @@ text-transform: uppercase;
         height: 100%;
         background: #000;
         z-index: -1;
-        transition: transform 0.5s;
+        transition: transform 0.5s,
+            color 0.4s linear;;
         transform-origin: 0 0;
         transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
         
  }
 
+
+
  .button::before {
     transform: scaleY(0);
+    
   
  }
 
@@ -51,3 +50,42 @@ text-transform: uppercase;
     transform: scaleY(1);
     
  }
+  */
+
+.button {
+    font-family: 'Poppins';
+    position: relative;
+    width: 200px;
+    text-align: center;
+    padding: 15px 0;
+    border: 3px solid black;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+/* .button span {
+    background: #fff;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+} */
+
+.button:hover {
+    background: #000;
+}
+
+/* .button:hover span {
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+ */

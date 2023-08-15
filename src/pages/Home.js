@@ -10,9 +10,9 @@ import outlineAsia from "../assets/images/outline-asia.svg";
 function Home() {
   return (
     <>
+      <Topbar />
+      <Sidebar />
       <div className="main">
-        <Topbar />
-        <Sidebar />
         <video
           src={heroVideo}
           className="hero-background-video"

@@ -6,7 +6,18 @@ function CustomButton(props) {
 
   return (
     <>
-      <button className="button">{props.text || defaultButtontext}</button>
+      <button
+        className="button"
+        onMouseEnter={(e) => {
+          e.target.style.color = "#fff";
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.color = "#000";
+        }}
+      >
+        {/* <span></span> */}
+        {props.text || defaultButtontext}
+      </button>
     </>
   );
 }

@@ -10,7 +10,7 @@ import "../css/sidebar.css";
 
 function Sidebar() {
   return (
-    <div className="social-media-icons">
+    <div className="social-media-icons d-none d-md-block">
       <ul className="">
         <a href="#">
           <li className="facebook">

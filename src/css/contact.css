@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets//fonts//poppins/Poppins-Regular.ttf');
+    font-weight: normal;
+}
+
+.main {
+    font-family: 'Poppins';
+}
+
+.main .contact-container {
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .contact-container p {
+    text-align: center;
+    width: 45%;
+    font-size: 18px;
+}
+
+.main .contact-container .form-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.main .contact-container .form-container .contact-form-field .input-fields input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 8px 8px 6px 0;
+    width: 450px;
+}
+
+.main .contact-container .form-container .contact-form-field textarea {
+    width: 500px;
+    height: 100%;
+}
