@@ -9,7 +9,7 @@ function Contact() {
     <>
       <Topbar />
       <div
-        className="main d-flex align-items-center justify-content-center"
+        className="contact d-flex align-items-center justify-content-center"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundAttachment: "fixed",
@@ -28,21 +28,19 @@ function Contact() {
             Fill out the form below, and we'll get back to you as soon as we
             can.
           </p>
-          <form className="form-container d-flex flex-column align-items-center mt-5">
-            <div className="contact-form-field d-flex gap-5 mb-4">
-              <div className="input-fields d-flex flex-column gap-5">
+          <form className="form-container">
+            <div className="contact-form-field">
+              <div className="input-fields">
                 <input type="text" placeholder="Your Name" />
                 <input type="text" placeholder="Your Email Address" />
                 <input type="text" placeholder="Your Phone Number" />
               </div>
-              <div className="input-fields">
-                <textarea placeholder="Your message..." className="p-2" />
-              </div>
-            </div>
-            <div className="button-container mt-3">
-              <CustomButton text={"Button"} />
+              <textarea placeholder="Your message..." className="p-2" />
             </div>
           </form>
+          <div className="button-container mt-3">
+            <CustomButton text={"Button"} />
+          </div>
         </div>
       </div>
       <Footer />

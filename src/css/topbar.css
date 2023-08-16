@@ -133,3 +133,8 @@ header .navbar-container .active {
 }
 
 } 
+
+/************ During Link Clicked **************/
+header .navbar-container .link-container li .active {
+    color: #d6d6d6;
+}
