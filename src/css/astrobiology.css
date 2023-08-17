@@ -1,0 +1,118 @@
+
+/********************* Font Family *********************/
+@font-face {
+    font-family: Poppins;
+    src: url('../assets/fonts/poppins/Poppins-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../assets/fonts/poppins/Poppins-Regular.ttf');
+    font-weight: normal;
+}
+/********************** Content ************************/
+section {
+    padding: 100px 200px;
+    color: #fff;
+}
+
+.astrobiology-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #121212;
+    font-family: 'Poppins';
+}
+
+.astrobiology-container .astrobiology-content {
+    
+    z-index: 888;
+    margin-top: 50px;
+    display: grid;
+    row-gap: 0.5em;
+}
+
+.astrobiology-container .astrobiology-content h1 {
+    width: 50%;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.astrobiology-container .astrobiology-content p {
+    width: 50%;
+    font-size: 16px;
+}
+
+/************** Video Slider ****************/
+.astrobiology-container .video-slide {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* clip-path: circle(0% at 0 50%); */
+}
+
+/* .astrobiology-container .video-slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+} */
+
+.astrobiology-container .astrobiology-content .slider-navigation {
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.astrobiology-container .astrobiology-content .slider-navigation .nav-btn {
+    width: 12px;
+    height: 12px;
+    background: #121212;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.astrobiology-container .astrobiology-content .slider-navigation .nav-btn.active {
+    background: #fff;
+}
+
+.astrobiology-container .astrobiology-content .slider-navigation .nav-btn:not(:last-child) {
+    margin-right: 20px;
+
+}
+
+.astrobiology-container .astrobiology-content .slider-navigation .nav-btn:hover {
+    transform: scale(1.2);
+}
+
+/* .astrobiology-container:before {
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(3, 96,251, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+} */
+
+/************ Media Queries ***************/
+@media (max-width: 761px) {
+    section {
+        padding: 100px 20px;
+    }
+}
