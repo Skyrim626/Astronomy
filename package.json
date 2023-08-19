@@ -1,7 +1,7 @@
 {
   "name": "astronomy-website",
   "version": "0.1.0",
-  "homepage": "https://Skyrim626.github.io/Home",
+  "homepage": "https://Skyrim626.github.io/Astronomy",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
