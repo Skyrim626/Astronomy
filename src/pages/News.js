@@ -7,6 +7,8 @@ import videoBackground from "../assets/videos/news-section-background-video.mp4"
 import featuredNewsImage from "../assets/images/news-articles/featured-news.jpg";
 import NewsCard from "../components/NewsCard";
 import exampleNewsImage from "../assets/images/news-articles/news1.jpg";
+import CustomButton from "../components/CustomButton";
+import searchPic from "../assets/images/searchSVG.svg";
 
 const categoriesDictinary = {};
 
@@ -60,16 +62,124 @@ function News() {
               <NewsCard
                 categories={["Biography", "My Life"]}
                 newsImage={exampleNewsImage}
+                customHeight={"100%"}
               />
               <NewsCard
                 categories={["Biography"]}
                 newsImage={exampleNewsImage}
+                customHeight={"100%"}
               />
               <NewsCard
                 categories={["Biography"]}
                 newsImage={exampleNewsImage}
+                customHeight={"100%"}
               />
             </div>
+          </div>
+          <div className="news-archive-section mt-5">
+            <h5>News Archive</h5>
+            <div className="search-bar">
+              <input placeholder="Search..." />
+              <button className="search-button">
+                <img src={searchPic} />
+              </button>
+            </div>
+          </div>
+          <div className="layout mt-4">
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+          </div>
+          <div className="layout mt-4">
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+          </div>
+          <div className="layout mt-4">
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+          </div>
+          <div className="layout mt-4">
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+          </div>
+          <div className="layout mt-4">
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+          </div>
+          <div className="layout mt-4">
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+            <NewsCard
+              categories={["Biography"]}
+              newsImage={exampleNewsImage}
+              customHeight={"250px"}
+              customWidth={"100%"}
+            />
+          </div>
+          <div
+            className="mt-5 load-more-button"
+            style={{ textAlign: "center" }}
+          >
+            <CustomButton text={"Load More"} />
           </div>
         </div>
       </div>

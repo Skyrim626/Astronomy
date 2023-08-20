@@ -1,21 +1,26 @@
-function NewsCard({
-  customHeight,
-  newsImage,
-  categories,
-  newsTitle,
-  customFontSize,
-}) {
-  const defaultHeight = 250;
+function NewsCard(
+  {
+    customHeight,
+    newsImage,
+    categories,
+    newsTitle,
+    customFontSize,
+    customWidth,
+  },
+  props
+) {
+  const defaultHeight = "100%";
   const defaultFontSize = "18";
+  const defaultCustomWidth = "100%";
 
   return (
     <>
       <div
         className="newsCard"
         style={{
-          height: `${customHeight || defaultHeight}px`,
+          height: customHeight || defaultHeight,
           cursor: "pointer",
-
+          width: customWidth || defaultCustomWidth,
           position: "relative",
         }}
       >
@@ -60,7 +65,12 @@ function NewsCard({
               <p>No categories available.</p>
             )}
           </div>
-          <h4 style={{ fontSize: `${customFontSize || defaultFontSize}px` }}>
+          <h4
+            style={{
+              fontSize: `${customFontSize || defaultFontSize}px`,
+              color: "white",
+            }}
+          >
             {newsTitle || "No Title"}
           </h4>
         </div>
